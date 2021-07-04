@@ -4,6 +4,7 @@ namespace Lesson_1
 {
     class Algorithm_1
     {
+        // Задача по блок-схеме
         static void Main(string[] args)
         {
             Flowchart();
@@ -44,5 +45,7 @@ namespace Lesson_1
                 Console.WriteLine("Число должно быть целым и больше нуля");
             }
         }
+
+
     }
 }
