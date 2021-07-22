@@ -5,13 +5,14 @@ using System.Diagnostics;
 
 namespace Lesson_4
 {
-    class Program
+    class FindingString
     {
         static void Main(string[] args)
         {
             int stringLength = 10;
             int arrayLength = 100000;
             Random r = new Random();
+            Stopwatch sw = new Stopwatch();
 
 
             string[] currentArray = GetRandomStringArray(stringLength, arrayLength);
@@ -21,8 +22,6 @@ namespace Lesson_4
 
             //строка которую будем искать
             string findingString = currentArray[r.Next(0, arrayLength - 1)];
-
-            Stopwatch sw = new Stopwatch();
 
 
             Console.WriteLine("Поиск в массиве строк");
